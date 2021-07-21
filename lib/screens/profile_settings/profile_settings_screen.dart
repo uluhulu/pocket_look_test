@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pocket_look_test/global/widgets/pocket_lock_button.dart';
-import 'package:pocket_look_test/global/widgets/pocket_lock_text_field.dart';
+import 'package:pocket_look_test/global/widgets/pocket_look_button.dart';
+import 'package:pocket_look_test/global/widgets/pocket_look_text_field.dart';
 import 'package:pocket_look_test/global/widgets/pocket_look_appbar.dart';
 import 'package:pocket_look_test/res/strings.dart';
 import 'package:pocket_look_test/screens/profile_settings/widgets/text_field_title.dart';
@@ -14,7 +14,7 @@ class ProfileSettingsScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12.0),
         child: Column(
           children: [
-            PocketLookAppBar(),
+            PocketLookAppBar(title: S.settings,),
             SizedBox(
               height: 12,
             ),
@@ -22,14 +22,14 @@ class ProfileSettingsScreen extends StatelessWidget {
             SizedBox(
               height: 12,
             ),
-            PocketLockButton(
+            PocketLookButton(
               text: S.changeProfilePhoto,
               backgroundColor: Color(0xFF00D85E),
             ),
             SizedBox(
               height: 8,
             ),
-            PocketLockButton(
+            PocketLookButton(
               text: S.deleteProfilePhoto,
               backgroundColor: Color(0xFFF0F0F0),
             ),
@@ -49,7 +49,7 @@ class ProfileSettingsScreen extends StatelessWidget {
             SizedBox(
               height: 4,
             ),
-            PocketLockTextField(
+            PocketLookTextField(
               hintText: S.hintLogin,
             ),
             SizedBox(
@@ -61,7 +61,7 @@ class ProfileSettingsScreen extends StatelessWidget {
             SizedBox(
               height: 4,
             ),
-            PocketLockTextField(
+            PocketLookTextField(
               hintText: S.hintName,
             ),
             SizedBox(
@@ -73,7 +73,7 @@ class ProfileSettingsScreen extends StatelessWidget {
             SizedBox(
               height: 4,
             ),
-            PocketLockTextField(
+            PocketLookTextField(
               hintText: S.hintAbout,
             ),
             SizedBox(
@@ -86,7 +86,7 @@ class ProfileSettingsScreen extends StatelessWidget {
             SizedBox(
               height: 12,
             ),
-            PocketLockButton(
+            PocketLookButton(
               text: S.goToAccountStatus,
               backgroundColor: Color(0xFF00D85E),
             ),

@@ -24,10 +24,21 @@ class TextStyles {
         fontSize: 17,
       );
 
+  static TextStyle get accountStatusTextStyle => regular.copyWith(
+        fontSize: 17,
+        color: Color(0xFF606060),
+    height: 1.35
+      );
+
+  static TextStyle get accountStatusTitleStyle => mediumStyle.copyWith(
+        fontSize: 19,
+      );
+
   static TextStyle get textFieldTitleStyle => regular.copyWith(
         fontSize: 15,
         color: Color(0xFF606060),
       );
+
   static TextStyle get hintStyle => regular.copyWith(
         fontSize: 17,
         color: Color(0xFFAAAAAA),

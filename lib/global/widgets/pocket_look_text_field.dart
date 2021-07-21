@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_look_test/res/text_styles.dart';
 
-class PocketLockTextField extends StatelessWidget {
+class PocketLookTextField extends StatelessWidget {
   final String hintText;
 
-  const PocketLockTextField({Key? key, required this.hintText}) : super(key: key);
+  const PocketLookTextField({Key? key, required this.hintText}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

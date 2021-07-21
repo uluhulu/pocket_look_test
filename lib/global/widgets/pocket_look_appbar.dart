@@ -4,6 +4,9 @@ import 'package:pocket_look_test/res/strings.dart';
 import 'package:pocket_look_test/res/text_styles.dart';
 
 class PocketLookAppBar extends StatelessWidget {
+  final String title;
+
+  const PocketLookAppBar({Key? key, required this.title}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -31,7 +34,7 @@ class PocketLookAppBar extends StatelessWidget {
               width: 12,
             ),
             Text(
-              S.settings,
+              title,
               style: TextStyles.appBarTextStyle,
             ),
             Spacer(),

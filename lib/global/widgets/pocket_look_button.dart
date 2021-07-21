@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:pocket_look_test/res/text_styles.dart';
 
-class PocketLockButton extends StatelessWidget {
+class PocketLookButton extends StatelessWidget {
   final String text;
   final Color backgroundColor;
 
-  const PocketLockButton({
+  const PocketLookButton({
     Key? key,
     required this.text,
     required this.backgroundColor,
