@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           DeviceType deviceType) {
         return GetMaterialApp(
           title: 'Pocket Look Test',
-          initialRoute: Routes.ACCOUNT_STATUS,
+          initialRoute: Routes.PROFILE_SETTINGS,
           debugShowCheckedModeBanner: false,
           locale: Get.deviceLocale,
           getPages: AppPages.routes,

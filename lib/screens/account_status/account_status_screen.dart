@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pocket_look_test/global/widgets/pocket_look_button.dart';
 import 'package:pocket_look_test/global/widgets/pocket_look_appbar.dart';
 import 'package:pocket_look_test/res/strings.dart';
 import 'package:pocket_look_test/screens/account_status/widgets/account_status_text.dart';
 import 'package:pocket_look_test/screens/account_status/widgets/account_status_title.dart';
+import 'package:pocket_look_test/screens/stylist_account_settings/stylist_account_settings.dart';
 
 class AccountStatusScreen extends StatelessWidget {
   @override
@@ -30,6 +32,9 @@ class AccountStatusScreen extends StatelessWidget {
             PocketLookButton(
               text: S.becomeStylist,
               backgroundColor: Color(0xFF00D85E),
+              onPressed: () {
+                Get.to(StylistAccountSettings());
+              },
             ),
           ],
         ),
